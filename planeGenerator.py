@@ -62,7 +62,7 @@ def generate_road(pos_matrix, lebar_jalan, tinggi_jalan):
                 print(pos_matrix[baris][kolom], end=' ')
             print(' ')
 
-def update_road(pos_matrix, lebar_jalan, tinggi_jalan):
+def update_road(pos_matrix, lebar_jalan):
     dummy_obstacle_matrix = random.choices([i for i in range(lebar_jalan)], k = lebar_jalan//8)
 
     # for baris in reversed(range(tinggi_jalan-1)):
