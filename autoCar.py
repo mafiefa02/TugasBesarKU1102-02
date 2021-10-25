@@ -62,10 +62,10 @@ if __name__ == "__main__":
             mobilEngine.moveCar(pos_matrix, car_position, lebar_jalan, tinggi_jalan, jalur_optimal)
             pos_matrix = planeGenerator.update_road(pos_matrix, lebar_jalan)
             planeGenerator.generate_road(pos_matrix, lebar_jalan, tinggi_jalan)             # print jalan
-            time.sleep(1)
+            time.sleep(0.5)
 
         if car_can_move:
             mobilEngine.placeCar(pos_matrix, 'up', car_position)
             pos_matrix = planeGenerator.update_road(pos_matrix, lebar_jalan)  # remove baris paling bawah dari jalan
             planeGenerator.generate_road(pos_matrix, lebar_jalan, tinggi_jalan)             # print jalan
-            time.sleep(1)
+            time.sleep(0.5)

@@ -173,7 +173,7 @@ def moveCar(pos_matrix, car_position, lebar_jalan, tinggi_jalan, jalur_yang_mung
             placeCar(pos_matrix, 'right', car_position)
             planeGenerator.generate_road(pos_matrix,lebar_jalan, tinggi_jalan)
             car_position = getCarPosition(pos_matrix, lebar_jalan)
-            time.sleep(1)
+            time.sleep(0.5)
         placeCar(pos_matrix, 'up', car_position)
 
     if jalur < car_position:
@@ -181,5 +181,5 @@ def moveCar(pos_matrix, car_position, lebar_jalan, tinggi_jalan, jalur_yang_mung
             placeCar(pos_matrix, 'left', car_position)
             planeGenerator.generate_road(pos_matrix, lebar_jalan, tinggi_jalan)
             car_position = getCarPosition(pos_matrix, lebar_jalan)
-            time.sleep(1)
+            time.sleep(0.5)
         placeCar(pos_matrix, 'up', car_position)
